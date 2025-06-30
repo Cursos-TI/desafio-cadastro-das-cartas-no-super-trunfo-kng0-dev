@@ -25,5 +25,5 @@ int main() {
     scanf("%d", &numPntsTuristicos2);
 
 
-    printf("\n\n555555555Carta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %d\nÁrea: %f\nPIB: %f\nNúmero de Pontos Turísticos: %d\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %d\nÁrea: %f\nPIB: %f\nNúmero de Pontos Turísticos: %d\n\n", populacao1, area1, pib1, numPntsTuristicos1,populacao2, area2, pib2, numPntsTuristicos2 );
+    printf("\n\nCarta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %d\nÁrea: %f\nPIB: %f\nNúmero de Pontos Turísticos: %d\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %d\nÁrea: %f\nPIB: %f\nNúmero de Pontos Turísticos: %d\n\n", populacao1, area1, pib1, numPntsTuristicos1,populacao2, area2, pib2, numPntsTuristicos2 );
 }

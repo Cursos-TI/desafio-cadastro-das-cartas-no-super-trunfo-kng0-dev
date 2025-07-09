@@ -34,10 +34,17 @@ int main() {
     printf("\n\nCarta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %u\nÁrea: %.2fkm²\nPIB: %.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %u\nÁrea: %.2fkm²\nPIB: %.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", populacao1, area1, pib1, numPntsTuristicos1,densidadePopulacional1,pibPerCapita1, populacao2, area2, pib2, numPntsTuristicos2,densidadePopulacional2,pibPerCapita2 ); //disponibiliza os quadros com as informações das cartas
 
     //cálculo super poder
-    superPoder1 = (float)populacao1 + area1 + pib1 + numPntsTuristicos1; 
+    superPoder1 = (float)populacao1 + area1 + pib1 + numPntsTuristicos1 - densidadePopulacional1; 
+
+    superPoder2 = (float)populacao2 + area2 + pib2 + numPntsTuristicos2 - densidadePopulacional2; 
 
     //comparação das cartas
     int resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap;
     resPopulacao = populacao1 > populacao2;
+    resArea = area1 > area2;
+    resPib = pib1 > pib2;
+    resPntsTuristicos = numPntsTuristicos1 > numPntsTuristicos2;
+    resDensidadePop = densidadePopulacional1 < densidadePopulacional2;
+    resPibPerCap = pibPerCapita1 > pibPerCapita2;
 
 }

@@ -50,5 +50,5 @@ int main() {
     resSuperPoder = superPoder1 > superPoder2;
     //exibe os resultados das comparações
 
-    printf("Comparação de cartas: \nPopulação: %i\nÁrea: %i\nPIB: %i\nPontos Turísticos: %i\nDensidade Populacional: %i\nPIB per Capita: %i\n10Super Poder: %i\n", resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap, resSuperPoder);
+    printf("Comparação de cartas: \nPopulação: %i\nÁrea: %i\nPIB: %i\nPontos Turísticos: %i\nDensidade Populacional: %i\nPIB per Capita: %i\nSuper Poder: %i\n", resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap, resSuperPoder);
 };

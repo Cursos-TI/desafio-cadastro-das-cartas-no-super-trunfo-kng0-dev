@@ -49,4 +49,6 @@ int main() {
     resPibPerCap = pibPerCapita1 > pibPerCapita2;
 
     //exibe os resultados das comparações
+
+    printf("Comparação de cartas:\nPopulação: \nÁrea: \nPIB: \nPontos Turísticos: \nDensidade Populacional: \nPIB per Capita: \n Super Poder: \n", resPopulacao, resArea, re)
 }

@@ -9,7 +9,7 @@ int main() {
     
     printf("Carta 01:\n"); //insere as informações da primeira carta
     printf("Informe a população da cidade: \n");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
     printf("Informe a área da cidade: \n");
     scanf("%f", &area1);
     printf("Informe o PIB da cidade: \n");
@@ -19,9 +19,9 @@ int main() {
     densidadePopulacional1 = populacao1 / area1;
     pibPerCapita1 = pib1 / populacao1;
 
-    printf("Carta 02:"); //insere as informações da segunda carta
+    printf("Carta 02:\n"); //insere as informações da segunda carta
     printf("Informe a população da cidade: \n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
     printf("Informe a área da cidade: \n");
     scanf("%f", &area2);
     printf("Informe o PIB da cidade: \n");
@@ -31,7 +31,8 @@ int main() {
     densidadePopulacional2  = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
-    printf("\n\nCarta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %u\nÁrea: %.2fkm²\nPIB: %.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %u\nÁrea: %.2fkm²\nPIB: %.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", populacao1, area1, pib1, numPntsTuristicos1,densidadePopulacional1,pibPerCapita1, populacao2, area2, pib2, numPntsTuristicos2,densidadePopulacional2,pibPerCapita2 ); //disponibiliza os quadros com as informações das cartas
+    //disponibiliza os quadros com as informações das cartas
+    printf("\n\nCarta 1:\nEstado: A\nCódigo: A01\nNome da Cidade: Belo Horizonte\nPopulação: %lu\nÁrea: %.2fkm²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\nCarta 2:\nEstado: B\nCódigo: B03\nNome da Cidade: Ilhéus\nPopulação: %lu\nÁrea: %.2fkm²\nPIB: R$%.2f\nNúmero de Pontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", populacao1, area1, pib1, numPntsTuristicos1,densidadePopulacional1,pibPerCapita1, populacao2, area2, pib2, numPntsTuristicos2,densidadePopulacional2,pibPerCapita2 ); 
 
     //cálculo super poder
     superPoder1 = (float)populacao1 + area1 + pib1 + numPntsTuristicos1 - densidadePopulacional1; 
@@ -47,4 +48,5 @@ int main() {
     resDensidadePop = densidadePopulacional1 < densidadePopulacional2;
     resPibPerCap = pibPerCapita1 > pibPerCapita2;
 
+    //exibe os resultados das comparações
 }

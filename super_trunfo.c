@@ -40,15 +40,15 @@ int main() {
     superPoder2 = (float)populacao2 + area2 + pib2 + numPntsTuristicos2 - densidadePopulacional2; 
 
     //comparação das cartas
-    int resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap;
+    int resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap, resSuperPoder;
     resPopulacao = populacao1 > populacao2;
     resArea = area1 > area2;
     resPib = pib1 > pib2;
     resPntsTuristicos = numPntsTuristicos1 > numPntsTuristicos2;
     resDensidadePop = densidadePopulacional1 < densidadePopulacional2;
     resPibPerCap = pibPerCapita1 > pibPerCapita2;
-
+    resSuperPoder = superPoder1 > superPoder2;
     //exibe os resultados das comparações
 
-    printf("Comparação de cartas:\nPopulação: \nÁrea: \nPIB: \nPontos Turísticos: \nDensidade Populacional: \nPIB per Capita: \n Super Poder: \n", resPopulacao, resArea, re)
-}
+    printf("Comparação de cartas: \nPopulação: %i\nÁrea: %i\nPIB: %i\nPontos Turísticos: %i\nDensidade Populacional: %i\nPIB per Capita: %i\n10Super Poder: %i\n", resPopulacao, resArea, resPib, resPntsTuristicos, resDensidadePop, resPibPerCap, resSuperPoder);
+};

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int codigoCarta1, codigoCarta2, numPntsTuristicos1, numPntsTuristicos2;
+    int numPntsTuristicos1, numPntsTuristicos2;
     float area1, area2, pib1, pib2;
     float densidadePopulacional1,densidadePopulacional2, pibPerCapita1,pibPerCapita2;
     unsigned long int populacao1, populacao2;
